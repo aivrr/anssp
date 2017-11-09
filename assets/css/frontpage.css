@@ -1,0 +1,146 @@
+/*** FRONTPAGE CSS ***/
+/*** VERSION 1.0 ***/
+.hidden {
+  display: none !important; }
+
+.anssp-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #2e2d70;
+  border-radius: 7px;
+  padding: 2px;
+  margin-bottom: 5px; }
+  .anssp-button:not(:last-child) {
+    margin-right: 5px; }
+  .anssp-button:hover {
+    background-color: #f2f2f2; }
+  .anssp-button svg {
+    width: 100%;
+    height: auto; }
+  .anssp-button.anssp-large {
+    width: 120px;
+    height: 80px; }
+  .anssp-button.anssp-small {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 7px; }
+
+a.anssp-button-link {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  a.anssp-button-link:not(:last-child) {
+    margin-right: 5px; }
+  a.anssp-button-link:hover, a.anssp-button-link:focus {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none; }
+
+.anssp-full-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.anssp-hero-wrap {
+  position: relative; }
+  .anssp-hero-wrap .anssp-full-width {
+    position: absolute;
+    bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 20px; }
+    .anssp-hero-wrap .anssp-full-width .anssp-button {
+      background-color: #fff; }
+      .anssp-hero-wrap .anssp-full-width .anssp-button:hover {
+        background-color: #f2f2f2; }
+
+.anssp-float-bar {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+  z-index: 9999; }
+  .anssp-float-bar .anssp-button-link:not(:last-child) .anssp-button {
+    border-bottom: none; }
+  .anssp-float-bar .anssp-button {
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 0;
+    margin: 0; }
+    .anssp-float-bar .anssp-button:not(:last-child) {
+      border-bottom: none; }
+    .anssp-float-bar .anssp-button:hover {
+      background-color: #f2f2f2; }
+    .anssp-float-bar .anssp-button.anssp-large {
+      width: 100px;
+      height: 60px; }
+    .anssp-float-bar .anssp-button.anssp-small {
+      width: 60px;
+      height: 30px;
+      padding: 4px; }
+
+.anssp-drag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+  min-height: 100px;
+  min-width: 50px;
+  border: 5px solid #aaa;
+  padding: 10px; }
+
+.anssp-drag-container-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .anssp-drag-container-wrap:not(:last-child) {
+    margin-right: 20px; }
+  .anssp-drag-container-wrap h4 {
+    text-align: center; }
+
+#anssp-inactive-items {
+  opacity: 0.3; }
+
+.anssp-drag-containers-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

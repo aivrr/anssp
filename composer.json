@@ -1,0 +1,13 @@
+{
+    "name": "baerr/plugin-framework",
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {"Baerr\\Anssp\\": "class/"}
+    },
+    "phpcompanion":
+    {
+        "namespace_prefix": "Baerr\\Anssp"
+    }
+}

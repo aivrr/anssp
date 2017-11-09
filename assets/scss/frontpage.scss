@@ -1,0 +1,162 @@
+ /*** FRONTPAGE CSS ***/
+ /*** VERSION 1.0 ***/
+
+// bg color on hover
+$share-hover-color: #f2f2f2;
+// bg color on hover when in hero image
+$share-bg-hero: #fff;
+// bg color on hover when in float bar
+$share-bg-float: #fff;
+
+
+// hidden element helper
+.hidden {
+  display: none !important;
+}
+
+// social share button
+.anssp-button {
+    box-sizing: border-box;
+	width: 100px;
+	height: 40px;
+	display: flex;
+	border: 2px solid #2e2d70;
+	border-radius: 7px;
+	padding: 2px;
+	margin-bottom: 5px;
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+	&:hover {
+		background-color: $share-hover-color;
+	}
+	svg {
+		width: 100%;
+		height: auto;
+	}
+	&.anssp-large {
+		width: 120px;
+		height: 80px;
+	}
+	&.anssp-small {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		padding: 7px;
+	}
+}
+
+// social share button link
+a.anssp-button-link {
+	text-decoration: none;
+	box-shadow: none;
+	display: flex;
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+// full width container
+.anssp-full-width {
+	display: flex;
+	width: 100%;
+	min-height: 50px;
+	flex-wrap: wrap;
+}
+
+// container when displaying over hero image
+.anssp-hero-wrap {
+	position: relative;
+	.anssp-full-width {
+		position: absolute;
+		bottom: 0;
+		align-items: center;
+	    justify-content: flex-start;
+	    padding-left: 20px;
+	    .anssp-button {
+	    	background-color: $share-bg-hero;
+	    	&:hover {
+	    		background-color: $share-hover-color;
+	    	}
+	    }
+	}
+}
+
+// floating bar container
+.anssp-float-bar {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	z-index: 9999;
+	.anssp-button-link:not(:last-child) .anssp-button {
+		border-bottom: none;
+	}
+	.anssp-button {
+		width: 80px;
+		height: 40px;
+		background-color: $share-bg-float;
+		border-radius: 0;
+		margin: 0;
+		&:not(:last-child) {
+			border-bottom: none;
+		}
+		&:hover {
+    		background-color: $share-hover-color;
+    	}
+		&.anssp-large {
+			width: 100px;
+			height: 60px;
+		}
+		&.anssp-small {
+			width: 60px;
+			height: 30px;
+			padding: 4px;
+		}
+	}
+}
+
+// dragging enabled container in settings page
+.anssp-drag-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	min-height: 100px;
+	min-width: 50px;
+	border: 5px solid #aaa;
+	padding: 10px;
+}
+
+// wrap for container and title
+.anssp-drag-container-wrap {
+	display: flex;
+	flex-direction: column;
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+	h4 {
+		text-align: center;
+	}
+}
+
+// inactive items in settings page
+#anssp-inactive-items {
+	opacity: 0.3;
+}
+
+// wrap for all drag containers
+.anssp-drag-containers-wrap {
+	display: flex;
+}
+
